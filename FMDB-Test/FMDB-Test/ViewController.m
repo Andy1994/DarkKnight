@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "ViewController+Insert.h"
+#import "TableView.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) TableView *tableView;
 
 @end
 
@@ -17,7 +21,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [FMDBManager sharedInstance];
+    [self.view addSubview:self.tableView];
+    
+    [self loadMessage];
+}
+
+- (void)loadMessage {
+    NSLog(@"++++====StartLoadMessage:%f",[[NSDate date] timeIntervalSince1970]);
+    [MessageManager loadMessages:^(NSArray<Message *> *messages) {
+        self.tableView.messages = messages;
+        NSLog(@"++++====FinishLoadMessage:%f",[[NSDate date] timeIntervalSince1970]);
+    }];
+}
+
+- (TableView *)tableView {
+    if (!_tableView) {
+        _tableView = [[TableView alloc] init];
+    }
+    return _tableView;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -10,6 +10,9 @@
 
 @interface FMDBManager : NSObject
 
+@property (nonatomic, strong, readonly) FMDatabase *database;
+@property (nonatomic, strong, readonly) FMDatabaseQueue *databaseQueue;
+
 + (instancetype)sharedInstance;
 
 @end

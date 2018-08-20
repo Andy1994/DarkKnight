@@ -22,8 +22,16 @@
 		0D2BCBDB2074C6B20027FE4E /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2BCBD32074C6B20027FE4E /* FMDatabase.m */; };
 		0D2BCBDC2074C6B20027FE4E /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2BCBD72074C6B20027FE4E /* FMDatabasePool.m */; };
 		0D2BCBDD2074C6B20027FE4E /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2BCBD82074C6B20027FE4E /* FMResultSet.m */; };
-		0D2C801721257BB60020A58B /* FMDBCreateMigrating.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2C801621257BB60020A58B /* FMDBCreateMigrating.m */; };
-		0D2C801C212588E80020A58B /* FMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2C801B212588E80020A58B /* FMDBManager.m */; };
+		0D2C801F212593510020A58B /* ViewController+Insert.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2C801E212593510020A58B /* ViewController+Insert.m */; };
+		0D2C8026212A6FC90020A58B /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2C8025212A6FC90020A58B /* User.m */; };
+		0D2C8029212A70660020A58B /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2C8028212A70660020A58B /* Message.m */; };
+		0D2C802C212A71E60020A58B /* BaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2C802B212A71E60020A58B /* BaseObject.m */; };
+		0D2C8032212A74200020A58B /* FMDBCreateMigrating.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2C802F212A741F0020A58B /* FMDBCreateMigrating.m */; };
+		0D2C8033212A74200020A58B /* FMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2C8030212A741F0020A58B /* FMDBManager.m */; };
+		0D2C8037212A74500020A58B /* MessageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2C8036212A74500020A58B /* MessageManager.m */; };
+		0D2C803B212AB2EC0020A58B /* TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2C803A212AB2EC0020A58B /* TableView.m */; };
+		0D2C803E212AB2F90020A58B /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2C803D212AB2F90020A58B /* TableViewCell.m */; };
+		0D2C8041212AC01A0020A58B /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2C8040212AC01A0020A58B /* MessageViewController.m */; };
 		0D8CAC402085F9FE000EEBA0 /* FMDBMigrationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8CAC3E2085F9FE000EEBA0 /* FMDBMigrationManager.m */; };
 /* End PBXBuildFile section */
 
@@ -74,11 +82,27 @@
 		0D2BCBD62074C6B20027FE4E /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
 		0D2BCBD72074C6B20027FE4E /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
 		0D2BCBD82074C6B20027FE4E /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
-		0D2C801521257BB60020A58B /* FMDBCreateMigrating.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDBCreateMigrating.h; sourceTree = "<group>"; };
-		0D2C801621257BB60020A58B /* FMDBCreateMigrating.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDBCreateMigrating.m; sourceTree = "<group>"; };
 		0D2C801921257D680020A58B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		0D2C801A212588E80020A58B /* FMDBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDBManager.h; sourceTree = "<group>"; };
-		0D2C801B212588E80020A58B /* FMDBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDBManager.m; sourceTree = "<group>"; };
+		0D2C801D212593510020A58B /* ViewController+Insert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ViewController+Insert.h"; path = "Demo/ViewController+Insert.h"; sourceTree = "<group>"; };
+		0D2C801E212593510020A58B /* ViewController+Insert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "ViewController+Insert.m"; path = "Demo/ViewController+Insert.m"; sourceTree = "<group>"; };
+		0D2C8024212A6FC90020A58B /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		0D2C8025212A6FC90020A58B /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		0D2C8027212A70660020A58B /* Message.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		0D2C8028212A70660020A58B /* Message.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		0D2C802A212A71E60020A58B /* BaseObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseObject.h; sourceTree = "<group>"; };
+		0D2C802B212A71E60020A58B /* BaseObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseObject.m; sourceTree = "<group>"; };
+		0D2C802E212A741F0020A58B /* FMDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBManager.h; sourceTree = "<group>"; };
+		0D2C802F212A741F0020A58B /* FMDBCreateMigrating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBCreateMigrating.m; sourceTree = "<group>"; };
+		0D2C8030212A741F0020A58B /* FMDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBManager.m; sourceTree = "<group>"; };
+		0D2C8031212A741F0020A58B /* FMDBCreateMigrating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBCreateMigrating.h; sourceTree = "<group>"; };
+		0D2C8035212A74500020A58B /* MessageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageManager.h; sourceTree = "<group>"; };
+		0D2C8036212A74500020A58B /* MessageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageManager.m; sourceTree = "<group>"; };
+		0D2C8039212AB2EC0020A58B /* TableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableView.h; sourceTree = "<group>"; };
+		0D2C803A212AB2EC0020A58B /* TableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableView.m; sourceTree = "<group>"; };
+		0D2C803C212AB2F90020A58B /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		0D2C803D212AB2F90020A58B /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		0D2C803F212AC01A0020A58B /* MessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		0D2C8040212AC01A0020A58B /* MessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
 		0D8CAC3E2085F9FE000EEBA0 /* FMDBMigrationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBMigrationManager.m; sourceTree = "<group>"; };
 		0D8CAC3F2085F9FE000EEBA0 /* FMDBMigrationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBMigrationManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +164,8 @@
 				0D2BCB912074C4990027FE4E /* AppDelegate.m */,
 				0D2BCB932074C4990027FE4E /* ViewController.h */,
 				0D2BCB942074C4990027FE4E /* ViewController.m */,
+				0D2C801D212593510020A58B /* ViewController+Insert.h */,
+				0D2C801E212593510020A58B /* ViewController+Insert.m */,
 				0D2BCB962074C4990027FE4E /* Main.storyboard */,
 				0D2BCB9C2074C49B0027FE4E /* Assets.xcassets */,
 				0D2BCB9E2074C49B0027FE4E /* LaunchScreen.storyboard */,
@@ -207,12 +233,58 @@
 		0D2C801821257BD10020A58B /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				0D2C801A212588E80020A58B /* FMDBManager.h */,
-				0D2C801B212588E80020A58B /* FMDBManager.m */,
-				0D2C801521257BB60020A58B /* FMDBCreateMigrating.h */,
-				0D2C801621257BB60020A58B /* FMDBCreateMigrating.m */,
+				0D2C8038212AB2C10020A58B /* View */,
+				0D2C8034212A743D0020A58B /* Message */,
+				0D2C802D212A741F0020A58B /* FMDB */,
+				0D2C8023212A6EDA0020A58B /* Entities */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		0D2C8023212A6EDA0020A58B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				0D2C802A212A71E60020A58B /* BaseObject.h */,
+				0D2C802B212A71E60020A58B /* BaseObject.m */,
+				0D2C8024212A6FC90020A58B /* User.h */,
+				0D2C8025212A6FC90020A58B /* User.m */,
+				0D2C8027212A70660020A58B /* Message.h */,
+				0D2C8028212A70660020A58B /* Message.m */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		0D2C802D212A741F0020A58B /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				0D2C802E212A741F0020A58B /* FMDBManager.h */,
+				0D2C8030212A741F0020A58B /* FMDBManager.m */,
+				0D2C8031212A741F0020A58B /* FMDBCreateMigrating.h */,
+				0D2C802F212A741F0020A58B /* FMDBCreateMigrating.m */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		0D2C8034212A743D0020A58B /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				0D2C8035212A74500020A58B /* MessageManager.h */,
+				0D2C8036212A74500020A58B /* MessageManager.m */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		0D2C8038212AB2C10020A58B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0D2C803F212AC01A0020A58B /* MessageViewController.h */,
+				0D2C8040212AC01A0020A58B /* MessageViewController.m */,
+				0D2C8039212AB2EC0020A58B /* TableView.h */,
+				0D2C803A212AB2EC0020A58B /* TableView.m */,
+				0D2C803C212AB2F90020A58B /* TableViewCell.h */,
+				0D2C803D212AB2F90020A58B /* TableViewCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		0D8CAC3D2085F9FE000EEBA0 /* FMDBMigrationManager */ = {
@@ -354,13 +426,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D2C8026212A6FC90020A58B /* User.m in Sources */,
+				0D2C803B212AB2EC0020A58B /* TableView.m in Sources */,
+				0D2C802C212A71E60020A58B /* BaseObject.m in Sources */,
+				0D2C8033212A74200020A58B /* FMDBManager.m in Sources */,
 				0D2BCBD92074C6B20027FE4E /* FMDatabaseQueue.m in Sources */,
-				0D2C801C212588E80020A58B /* FMDBManager.m in Sources */,
+				0D2C801F212593510020A58B /* ViewController+Insert.m in Sources */,
+				0D2C8029212A70660020A58B /* Message.m in Sources */,
+				0D2C8032212A74200020A58B /* FMDBCreateMigrating.m in Sources */,
 				0D2BCB952074C4990027FE4E /* ViewController.m in Sources */,
 				0D2BCBDB2074C6B20027FE4E /* FMDatabase.m in Sources */,
+				0D2C8041212AC01A0020A58B /* MessageViewController.m in Sources */,
 				0D2BCBA32074C49B0027FE4E /* main.m in Sources */,
-				0D2C801721257BB60020A58B /* FMDBCreateMigrating.m in Sources */,
 				0D8CAC402085F9FE000EEBA0 /* FMDBMigrationManager.m in Sources */,
+				0D2C8037212A74500020A58B /* MessageManager.m in Sources */,
+				0D2C803E212AB2F90020A58B /* TableViewCell.m in Sources */,
 				0D2BCBDC2074C6B20027FE4E /* FMDatabasePool.m in Sources */,
 				0D2BCBDD2074C6B20027FE4E /* FMResultSet.m in Sources */,
 				0D2BCB922074C4990027FE4E /* AppDelegate.m in Sources */,

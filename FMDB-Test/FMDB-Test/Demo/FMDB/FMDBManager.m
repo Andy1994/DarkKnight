@@ -10,8 +10,8 @@
 
 @interface FMDBManager ()
 
-@property (nonatomic, strong) FMDatabase *database;
-@property (nonatomic, strong) FMDatabaseQueue *databaseQueue;
+@property (nonatomic, strong, readwrite) FMDatabase *database;
+@property (nonatomic, strong, readwrite) FMDatabaseQueue *databaseQueue;
 
 @end
 

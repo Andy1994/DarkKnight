@@ -20,11 +20,11 @@
 
 - (BOOL)migrateDatabase:(FMDatabase *)database error:(out NSError *__autoreleasing *)error {
     
-    BOOL result = YES;
+    BOOL result;
     
     result = [database executeUpdate:
      @"CREATE TABLE IF NOT EXISTS User (" \
-     "userId INT PRIMARY KEY NOT NULL UNIQUE," \
+     "userId INTEGER PRIMARY KEY NOT NULL UNIQUE," \
      "name TEXT NOT NULL" \
      ");"];
     
@@ -35,11 +35,11 @@
     
     result = [database executeUpdate:
      @"CREATE TABLE IF NOT EXISTS Message (" \
-     "id INT PRIMARY KEY NOT NULL," \
-     "userId INT," \
-     "otherUserId INT," \
+     "id INTEGER PRIMARY KEY AUTOINCREMENT," \
+     "userId INTEGER," \
+     "otherUserId INTEGER," \
      "content TEXT," \
-     "time TIMESTAMP," \
+     "time DATETIME," \
      "FOREIGN KEY(userId, otherUserId) REFERENCES User(userId, userId)" \
      ");"];
     
